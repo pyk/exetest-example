@@ -1,5 +1,6 @@
+const std = @import("std");
 const exetest = @import("exetest");
-const testing = @import("std").testing;
+const testing = std.testing;
 
 test "via exe name" {
     const argv = &[_][]const u8{"exetest-example"};
